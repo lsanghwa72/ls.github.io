@@ -1,0 +1,191 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 50px; /* 헤더 높이만큼 패딩을 추가 */
+}
+
+header {
+    background: #aad8fc;
+    color: #fbecfa;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed; /* 헤더를 상단에 고정 */
+    top: 0; /* 상단에서부터의 위치 */
+    width: 100%; /* 너비를 화면 전체로 설정 */
+    z-index: 1000; /* 다른 요소들 위에 위치하도록 z-index 설정 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#content {
+    padding: 20px;
+    min-height: 80vh;
+    transition: opacity 0.3s; /* 페이드 인/아웃 효과를 위한 트랜지션 추가 */
+}
+
+#content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#content li {
+    padding: 5px 0;
+    margin-left: 20px;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: 10px; /* 기존 이미지 위치를 아래로 10픽셀 이동 */
+    left: 95px;
+}
+
+.profile-imaged {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: 10px; /* 기존 이미지 위치를 아래로 10픽셀 이동 */
+    right: -195px;
+}
+
+.profile-imagee {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: 10px; /* 기존 이미지 위치를 아래로 10픽셀 이동 */
+    right: -285px;
+}
+
+.profile-images {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: 10px; /* 기존 이미지 위치를 아래로 10픽셀 이동 */
+    right: -385px;
+}
+
+.profile-imager {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: 10px; /* 기존 이미지 위치를 아래로 10픽셀 이동 */
+    right: -475px;
+}
+
+.profile-text {
+    position: absolute;
+    top: 120%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    color: rgb(254, 174, 174);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-texta {
+    position: absolute;
+    top: 120%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    color: rgb(154, 255, 145);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-textb {
+    position: absolute;
+    top: 120%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    color: rgb(145, 145, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-textc {
+    position: absolute;
+    top: 120%;
+    left: 122%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 214, 80);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-textd {
+    position: absolute;
+    top: 120%;
+    left: 154%;
+    transform: translate(-50%, -50%);
+    color: rgb(153, 255, 240);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right-align {
+    margin-left: 530px; /* 필요에 따라 값을 조정 */
+    margin-top: -30px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    #content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .profile-image, .profile-imaged {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-text, .profile-texta {
+        top: 100%;
+        font-size: 16px;
+    }
+}
+
